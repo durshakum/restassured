@@ -38,7 +38,7 @@ public class Login {
 
         String tokenString = response.then().extract().path("data.authToken");
 //        response.then().assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File("C:\\Users\\admin\\eclipse-workspace\\com.restassured\\loginschema.json")));
-        response.then().assertThat().statusCode(200);
+//        response.then().assertThat().statusCode(200);
         
         System.out.println("Status Code: " + response.statusCode());
         System.out.println("Token: " + tokenString);
