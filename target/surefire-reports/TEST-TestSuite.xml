@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="5.181" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\admin\eclipse-workspace\com.restassured\target\test-classes;C:\Users\admin\eclipse-workspace\com.restassured\target\classes;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\admin\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\admin\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\admin\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\admin\.m2\repository\io\rest-assured\json-path\5.5.6\json-path-5.5.6.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured-common\5.5.6\rest-assured-common-5.5.6.jar;C:\Users\admin\.m2\repository\org\json\json\20231013\json-20231013.jar;C:\Users\admin\.m2\repository\com\github\scribejava\scribejava-apis\8.3.1\scribejava-apis-8.3.1.jar;C:\Users\admin\.m2\repository\com\github\scribejava\scribejava-core\8.3.1\scribejava-core-8.3.1.jar;C:\Users\admin\.m2\repository\com\github\scribejava\scribejava-java8\8.3.1\scribejava-java8-8.3.1.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\admin\.m2\repository\io\rest-assured\json-schema-validator\5.5.6\json-schema-validator-5.5.6.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\admin\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\admin\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\admin\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\admin\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\admin\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\admin\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\admin\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\admin\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured-all\5.5.6\rest-assured-all-5.5.6.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\admin\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi\5.4.1\poi-5.4.1.jar;C:\Users\admin\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\admin\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\admin\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi-ooxml\5.4.1\poi-ooxml-5.4.1.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.1\poi-ooxml-lite-5.4.1.jar;C:\Users\admin\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\admin\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\admin\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\admin\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\admin\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.5.3\maven-surefire-plugin-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-api\3.5.3\surefire-api-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.5.3\surefire-logger-api-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.5.3\surefire-shared-utils-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.5.3\surefire-extensions-api-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.5.3\maven-surefire-common-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-booter\3.5.3\surefire-booter-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.5.3\surefire-extensions-spi-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar;C:\Users\admin\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar;C:\Users\admin\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar;C:\Users\admin\.m2\repository\org\codehaus\plexus\plexus-java\1.4.0\plexus-java-1.4.0.jar;C:\Users\admin\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\admin\.m2\repository\com\thoughtworks\qdox\qdox\2.2.0\qdox-2.2.0.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-simple\2.0.17\slf4j-simple-2.0.17.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\admin\AppData\Local\Temp\surefire14940956711153320290\surefirebooter-20250901021316104_3.jar C:\Users\admin\AppData\Local\Temp\surefire14940956711153320290 2025-09-01T02-13-15_937-jvmRun1 surefire-20250901021316104_1tmp surefire_0-20250901021316104_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\admin\eclipse-workspace\com.restassured\target\test-classes;C:\Users\admin\eclipse-workspace\com.restassured\target\classes;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured\5.5.6\rest-assured-5.5.6.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\admin\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\admin\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\admin\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\admin\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\admin\.m2\repository\io\rest-assured\xml-path\5.5.6\xml-path-5.5.6.jar;C:\Users\admin\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\admin\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\admin\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\admin\.m2\repository\io\rest-assured\json-path\5.5.6\json-path-5.5.6.jar;C:\Users\admin\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured-common\5.5.6\rest-assured-common-5.5.6.jar;C:\Users\admin\.m2\repository\org\json\json\20231013\json-20231013.jar;C:\Users\admin\.m2\repository\com\github\scribejava\scribejava-apis\8.3.1\scribejava-apis-8.3.1.jar;C:\Users\admin\.m2\repository\com\github\scribejava\scribejava-core\8.3.1\scribejava-core-8.3.1.jar;C:\Users\admin\.m2\repository\com\github\scribejava\scribejava-java8\8.3.1\scribejava-java8-8.3.1.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.3\jackson-databind-2.12.3.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.3\jackson-annotations-2.12.3.jar;C:\Users\admin\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.3\jackson-core-2.12.3.jar;C:\Users\admin\.m2\repository\io\rest-assured\json-schema-validator\5.5.6\json-schema-validator-5.5.6.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\admin\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\admin\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\admin\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\admin\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\admin\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\admin\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\admin\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\admin\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\admin\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\admin\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\admin\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\admin\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\admin\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\admin\.m2\repository\io\rest-assured\rest-assured-all\5.5.6\rest-assured-all-5.5.6.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-lang3\3.18.0\commons-lang3-3.18.0.jar;C:\Users\admin\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\admin\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\admin\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\admin\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi\5.4.1\poi-5.4.1.jar;C:\Users\admin\.m2\repository\commons-codec\commons-codec\1.18.0\commons-codec-1.18.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\admin\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\admin\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\admin\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi-ooxml\5.4.1\poi-ooxml-5.4.1.jar;C:\Users\admin\.m2\repository\org\apache\poi\poi-ooxml-lite\5.4.1\poi-ooxml-lite-5.4.1.jar;C:\Users\admin\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\admin\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\admin\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\admin\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\admin\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\admin\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\admin\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\admin\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\admin\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.5.3\maven-surefire-plugin-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-api\3.5.3\surefire-api-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.5.3\surefire-logger-api-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.5.3\surefire-shared-utils-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.5.3\surefire-extensions-api-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.5.3\maven-surefire-common-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-booter\3.5.3\surefire-booter-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.5.3\surefire-extensions-spi-3.5.3.jar;C:\Users\admin\.m2\repository\org\apache\maven\resolver\maven-resolver-util\1.4.1\maven-resolver-util-1.4.1.jar;C:\Users\admin\.m2\repository\org\apache\maven\resolver\maven-resolver-api\1.4.1\maven-resolver-api-1.4.1.jar;C:\Users\admin\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.4.0\maven-common-artifact-filters-3.4.0.jar;C:\Users\admin\.m2\repository\org\codehaus\plexus\plexus-java\1.4.0\plexus-java-1.4.0.jar;C:\Users\admin\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\admin\.m2\repository\com\thoughtworks\qdox\qdox\2.2.0\qdox-2.2.0.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-simple\2.0.17\slf4j-simple-2.0.17.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\admin"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\admin\eclipse-workspace\com.restassured"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\admin\AppData\Local\Temp\surefire14940956711153320290\surefirebooter-20250901021316104_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.8+12-LTS-250"/>
+    <property name="user.name" value="admin"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="C:\Users\admin\eclipse-workspace\com.restassured"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\admin\AppData\Local\Programs\Python\Python38;C:\Users\admin\AppData\Local\Programs\Python\Python38\DLLs;C:\Users\admin\AppData\Local\Programs\Python\Python38\Lib;C:\Users\admin\AppData\Local\Programs\Python\Python38\libs;C:\Users\admin\AppData\Local\Programs\Python\Python38\Scripts;C:\Program Files\Java\jdk-21\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\msedgedriver.exe;C:\Program Files (x86)\Microsoft\Edge\Application;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\apache-maven-3.9.11\bin;C:\Program Files\node-v22.18.0-win-x64;&apos;C:\Users\admin\AppData\Roaming\Python\Python38\Scripts;C:\Users\admin\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\admin\AppData\Local\Programs\Python\Python313\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm Community Edition 2021.1.1\bin;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk-21;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.8+12-LTS-250"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="workerCreate" classname="Create.CreateSupplier" time="4.218">
+    <failure message="1 expectation failed.&#10;Response body doesn&apos;t match expectation.&#10;Expected: The content to match the given JSON schema.&#10;error: object has missing required properties ([&quot;authToken&quot;,&quot;message&quot;,&quot;userInfo&quot;])&#10;    level: &quot;error&quot;&#10;    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/data&quot;}&#10;    instance: {&quot;pointer&quot;:&quot;/data&quot;}&#10;    domain: &quot;validation&quot;&#10;    keyword: &quot;required&quot;&#10;    required: [&quot;authToken&quot;,&quot;message&quot;,&quot;userInfo&quot;]&#10;    missing: [&quot;authToken&quot;,&quot;message&quot;,&quot;userInfo&quot;]&#10;&#10;  Actual: {&quot;meta&quot;:{&quot;status_code&quot;:200,&quot;success_message&quot;:&quot;Worker Created&quot;},&quot;data&quot;:{&quot;attachments&quot;:[],&quot;numTotalAssignments&quot;:0,&quot;isActive&quot;:true,&quot;updatedAt&quot;:null,&quot;firstName&quot;:&quot;Anabel&quot;,&quot;lastName&quot;:&quot;Abernathy&quot;,&quot;email&quot;:&quot;margarito.homenick@gmail.com&quot;,&quot;phone&quot;:&quot;(148) 010-9266&quot;,&quot;externalVmsId&quot;:&quot;737383&quot;,&quot;accountingId&quot;:&quot;7373833&quot;,&quot;notes&quot;:&quot;Nothing to add&quot;,&quot;workerID&quot;:1677,&quot;dobMonth&quot;:&quot;04&quot;,&quot;dobDay&quot;:&quot;10&quot;,&quot;dobYear&quot;:&quot;2000&quot;,&quot;address1&quot;:&quot;430 Boyle Causeway&quot;,&quot;address2&quot;:&quot;Ondricka Ports&quot;,&quot;city&quot;:&quot;Lakinland&quot;,&quot;state&quot;:&quot;Rhode Island&quot;,&quot;postalCode&quot;:&quot;53309-4492&quot;,&quot;country&quot;:&quot;Cambodia&quot;,&quot;emergencyContactName&quot;:&quot;NAMO&quot;,&quot;emergencyContactPhone&quot;:&quot;4748348934&quot;,&quot;emergencyContactEmail&quot;:&quot;qaworker1@yopmail.com&quot;,&quot;emergencyContactRelationship&quot;:&quot;NAMO&quot;,&quot;workEmail&quot;:&quot;margarito.homenick@gmail.com&quot;,&quot;persEmail&quot;:&quot;margarito.homenick@gmail.com&quot;,&quot;mobilePhone&quot;:&quot;6337373484&quot;,&quot;workPhone&quot;:&quot;7483839933&quot;,&quot;homePhone&quot;:&quot;7389292922&quot;,&quot;customFields&quot;:[],&quot;createdAt&quot;:&quot;2025-08-31T20:43:20.882Z&quot;}}&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["authToken","message","userInfo"])
+    level: "error"
+    schema: {"loadingURI":"#","pointer":"/properties/data"}
+    instance: {"pointer":"/data"}
+    domain: "validation"
+    keyword: "required"
+    required: ["authToken","message","userInfo"]
+    missing: ["authToken","message","userInfo"]
+
+  Actual: {"meta":{"status_code":200,"success_message":"Worker Created"},"data":{"attachments":[],"numTotalAssignments":0,"isActive":true,"updatedAt":null,"firstName":"Anabel","lastName":"Abernathy","email":"margarito.homenick@gmail.com","phone":"(148) 010-9266","externalVmsId":"737383","accountingId":"7373833","notes":"Nothing to add","workerID":1677,"dobMonth":"04","dobDay":"10","dobYear":"2000","address1":"430 Boyle Causeway","address2":"Ondricka Ports","city":"Lakinland","state":"Rhode Island","postalCode":"53309-4492","country":"Cambodia","emergencyContactName":"NAMO","emergencyContactPhone":"4748348934","emergencyContactEmail":"qaworker1@yopmail.com","emergencyContactRelationship":"NAMO","workEmail":"margarito.homenick@gmail.com","persEmail":"margarito.homenick@gmail.com","mobilePhone":"6337373484","workPhone":"7483839933","homePhone":"7389292922","customFields":[],"createdAt":"2025-08-31T20:43:20.882Z"}}
+
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at Create.CreateSupplier.workerCreate(CreateSupplier.java:114)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+    <system-out><![CDATA[Into Listeners
+Request method:	POST
+Request URI:	http://qa-api.launch-sandbox.com/api/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	email=qasankar.kumar@yopmail.com
+				password=Test1234
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Access-Control-Allow-Headers: x-access-token, Content-Type, if-modified-since, Pragma, Cache-Control, Content-Disposition
+Access-Control-Allow-Methods: PUT, PATCH, GET, POST, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Disposition
+Content-Type: application/json; charset=utf-8
+Date: Sun, 31 Aug 2025 20:43:19 GMT
+Server: nginx/1.16.1
+X-Powered-By: Express
+Content-Length: 2775
+Connection: keep-alive
+
+{
+    "meta": {
+        "status_code": 200
+    },
+    "data": {
+        "message": "User Login is successful",
+        "authToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyMTA3OTMxZGU2MGM1YTdjNWQ1MjZiZDFkNmE4YTM0ZCIsInJpZCI6MC4zOTc3NTYyNTQyNDkyNjE0LCJpYXQiOjE3NTY2NzI5OTl9.YlC7Th-OHSuzOVIwNvAe55gIcc28YupzbOuhiroaWUo",
+        "userInfo": {
+            "permissions": {
+                "REQS_VIEW": true,
+                "REQS_VIEW_CLIENT": true,
+                "REQS_CREATE": true,
+                "REQS_APPROVE": false,
+                "REQS_APPROVE_PROXY": true,
+                "REQS_COMMENT": true,
+                "REQS_HOLD": true,
+                "REQS_CLOSE": true,
+                "REQS_REOPEN": true,
+                "REQS_EDIT_PARTIAL": true,
+                "REQS_EDIT_FULL": true,
+                "REQS_EDIT_FULL_APPROVED": true,
+                "REQS_SOURCE": true,
+                "REQS_RELEASED_ACCEPT": true,
+                "REQS_VIEW_HISTORY": true,
+                "CANDIDATE_MANAGEMENT": true,
+                "SUBMISSIONS_PRESCREEN": true,
+                "SUBMISSIONS_SCREEN": true,
+                "SUBMISSIONS_VIEW": true,
+                "SUBMISSIONS_OVERRIDE": true,
+                "SCREENING_GRAPHICS_BASIC": true,
+                "SCREENING_GRAPHICS_ADVANCED": true,
+                "OFFER_SELECTION": true,
+                "OFFER_EXTENSION": true,
+                "OFFER_ACCEPT": true,
+                "REPORTS_RUN": true,
+                "SYSTEM_MANAGE": true,
+                "SYSTEM_AUDIT": true,
+                "USERS_VIEW_MSP": true,
+                "USERS_VIEW_CLIENT": true,
+                "EXPORT_USERS": true,
+                "EXPORT_CLIENTS": true,
+                "EXPORT_SUPPLIERS": true,
+                "EXPORT_REQS": true,
+                "WATCH_REQS": true,
+                "VIEW_ASSIGNMENTS": true,
+                "WATCH_ASSIGNMENTS": true,
+                "TC_VIEW": true,
+                "TC_VIEW_HISTORY": true,
+                "TC_EDIT": true,
+                "TC_EDIT_PROXY": true,
+                "TC_APPROVE_PROXY": true,
+                "TC_RESUBMIT": true,
+                "TC_UPDATE_STATUS": true,
+                "TC_PROCESS_PAYROLL": true,
+                "TC_PROCESS_BILLING": true,
+                "TC_VIEW_ALL": true,
+                "TC_DATA_EXPORT": true,
+                "TC_PDF_EXPORT": true,
+                "TC_EXCEPTIONS_EXPORT": true,
+                "TC_OVERRIDE": true,
+                "TC_REDISTRIBUTE": true,
+                "EX_VIEW": true,
+                "EX_VIEW_HISTORY": true,
+                "EX_EDIT": true,
+                "EX_EDIT_PROXY": true,
+                "EX_APPROVE_PROXY": true,
+                "EX_RESUBMIT": true,
+                "EX_UPDATE_STATUS": true,
+                "EX_PROCESS_PAYROLL": true,
+                "EX_PROCESS_BILLING": true,
+                "EX_VIEW_ALL": true,
+                "EX_DATA_EXPORT": true,
+                "EX_PDF_EXPORT": true,
+                "EX_EXCEPTIONS_EXPORT": true,
+                "EX_OVERRIDE": true,
+                "IN_VIEW": true,
+                "IN_VIEW_HISTORY": true,
+                "IN_EDIT": true,
+                "IN_EDIT_PROXY": true,
+                "IN_APPROVE_PROXY": true,
+                "IN_RESUBMIT": true,
+                "IN_UPDATE_STATUS": true,
+                "IN_PROCESS_PAYROLL": true,
+                "IN_PROCESS_BILLING": true,
+                "IN_VIEW_ALL": true,
+                "IN_DATA_EXPORT": true,
+                "IN_PDF_EXPORT": true,
+                "IN_EXCEPTIONS_EXPORT": true,
+                "IN_OVERRIDE": true,
+                "AS_VIEW_CLIENT": false,
+                "AS_VIEW_CLIENT_ALL": false,
+                "AS_DATA_EXPORT_CLIENT": false,
+                "AS_VIEW_SUPPLIER": false,
+                "AS_DATA_EXPORT_SUPPLIER": false,
+                "DOCS_VIEW": true,
+                "DOCS_VIEW_HISTORY": true,
+                "DOCS_EDIT": true,
+                "DOCS_DATA_EXPORT": true,
+                "USERS_LOGIN_OTHER": true,
+                "USERS_VIEW_SUPPLIER": true
+            },
+            "userType": "msp",
+            "userID": 6385,
+            "permGrpIDs": [
+                "MANAGE_SYSTEM",
+                "MSP_DEFAULT",
+                "ASSIGNMENTS_MSP_DEFAULT",
+                "DOCS_MSP_DEFAULT",
+                "TE_MSP_DEFAULT",
+                "TE_WORKER_DEFAULT",
+                "TE_MANAGE_OPERATIONS",
+                "TE_PROCESS_BILLING",
+                "TE_PROCESS_PAYROLL",
+                "TE_VIEW_ALL",
+                "TE_MSP_DATA_EXPORT",
+                "TE_OVERRIDE",
+                "EDIT_APPROVED_REQS",
+                "USERS_LOGIN_OTHER"
+            ],
+            "firstName": "Sankar",
+            "lastName": "Kumar",
+            "workerID": 1001,
+            "workerFullName": "QA Worker Worker"
+        }
+    }
+}
+Status Code: 200
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyMTA3OTMxZGU2MGM1YTdjNWQ1MjZiZDFkNmE4YTM0ZCIsInJpZCI6MC4zOTc3NTYyNTQyNDkyNjE0LCJpYXQiOjE3NTY2NzI5OTl9.YlC7Th-OHSuzOVIwNvAe55gIcc28YupzbOuhiroaWUo
+Token next is eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyMTA3OTMxZGU2MGM1YTdjNWQ1MjZiZDFkNmE4YTM0ZCIsInJpZCI6MC4zOTc3NTYyNTQyNDkyNjE0LCJpYXQiOjE3NTY2NzI5OTl9.YlC7Th-OHSuzOVIwNvAe55gIcc28YupzbOuhiroaWUo
+Token next is 6385
+Request method:	POST
+Request URI:	http://qa-api.launch-sandbox.com/api/workers
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		x-access-token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIyMTA3OTMxZGU2MGM1YTdjNWQ1MjZiZDFkNmE4YTM0ZCIsInJpZCI6MC4zOTc3NTYyNTQyNDkyNjE0LCJpYXQiOjE3NTY2NzI5OTl9.YlC7Th-OHSuzOVIwNvAe55gIcc28YupzbOuhiroaWUo
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Anabel",
+    "lastName": "Abernathy",
+    "email": "margarito.homenick@gmail.com",
+    "phone": "(148) 010-9266",
+    "dobDay": "10",
+    "dobMonth": "04",
+    "dobYear": "2000",
+    "address1": "430 Boyle Causeway",
+    "address2": "Ondricka Ports",
+    "city": "Lakinland",
+    "state": "Rhode Island",
+    "postalCode": "53309-4492",
+    "country": "Cambodia",
+    "emergencyContactName": "NAMO",
+    "emergencyContactRelationship": "NAMO",
+    "emergencyContactEmail": "qaworker1@yopmail.com",
+    "emergencyContactPhone": "4748348934",
+    "externalVmsId": "737383",
+    "accountingId": "7373833",
+    "notes": "Nothing to add",
+    "workEmail": "margarito.homenick@gmail.com",
+    "persEmail": "margarito.homenick@gmail.com",
+    "mobilePhone": "6337373484",
+    "workPhone": "7483839933",
+    "homePhone": "7389292922"
+}
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,486 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "meta": {
+      "type": "object",
+      "properties": {
+        "status_code": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "status_code"
+      ]
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+       
+        "userInfo": {
+          "type": "object",
+          "properties": {
+            "permissions": {
+              "type": "object",
+              "properties": {
+                "REQS_VIEW": {
+                  "type": "boolean"
+                },
+                "REQS_VIEW_CLIENT": {
+                  "type": "boolean"
+                },
+                "REQS_CREATE": {
+                  "type": "boolean"
+                },
+                "REQS_APPROVE": {
+                  "type": "boolean"
+                },
+                "REQS_APPROVE_PROXY": {
+                  "type": "boolean"
+                },
+                "REQS_COMMENT": {
+                  "type": "boolean"
+                },
+                "REQS_HOLD": {
+                  "type": "boolean"
+                },
+                "REQS_CLOSE": {
+                  "type": "boolean"
+                },
+                "REQS_REOPEN": {
+                  "type": "boolean"
+                },
+                "REQS_EDIT_PARTIAL": {
+                  "type": "boolean"
+                },
+                "REQS_EDIT_FULL": {
+                  "type": "boolean"
+                },
+                "REQS_EDIT_FULL_APPROVED": {
+                  "type": "boolean"
+                },
+                "REQS_SOURCE": {
+                  "type": "boolean"
+                },
+                "REQS_RELEASED_ACCEPT": {
+                  "type": "boolean"
+                },
+                "REQS_VIEW_HISTORY": {
+                  "type": "boolean"
+                },
+                "CANDIDATE_MANAGEMENT": {
+                  "type": "boolean"
+                },
+                "SUBMISSIONS_PRESCREEN": {
+                  "type": "boolean"
+                },
+                "SUBMISSIONS_SCREEN": {
+                  "type": "boolean"
+                },
+                "SUBMISSIONS_VIEW": {
+                  "type": "boolean"
+                },
+                "SUBMISSIONS_OVERRIDE": {
+                  "type": "boolean"
+                },
+                "SCREENING_GRAPHICS_BASIC": {
+                  "type": "boolean"
+                },
+                "SCREENING_GRAPHICS_ADVANCED": {
+                  "type": "boolean"
+                },
+                "OFFER_SELECTION": {
+                  "type": "boolean"
+                },
+                "OFFER_EXTENSION": {
+                  "type": "boolean"
+                },
+                "OFFER_ACCEPT": {
+                  "type": "boolean"
+                },
+                "REPORTS_RUN": {
+                  "type": "boolean"
+                },
+                "SYSTEM_MANAGE": {
+                  "type": "boolean"
+                },
+                "SYSTEM_AUDIT": {
+                  "type": "boolean"
+                },
+                "USERS_VIEW_MSP": {
+                  "type": "boolean"
+                },
+                "USERS_VIEW_CLIENT": {
+                  "type": "boolean"
+                },
+                "EXPORT_USERS": {
+                  "type": "boolean"
+                },
+                "EXPORT_CLIENTS": {
+                  "type": "boolean"
+                },
+                "EXPORT_SUPPLIERS": {
+                  "type": "boolean"
+                },
+                "EXPORT_REQS": {
+                  "type": "boolean"
+                },
+                "WATCH_REQS": {
+                  "type": "boolean"
+                },
+                "VIEW_ASSIGNMENTS": {
+                  "type": "boolean"
+                },
+                "WATCH_ASSIGNMENTS": {
+                  "type": "boolean"
+                },
+                "TC_VIEW": {
+                  "type": "boolean"
+                },
+                "TC_VIEW_HISTORY": {
+                  "type": "boolean"
+                },
+                "TC_EDIT": {
+                  "type": "boolean"
+                },
+                "TC_EDIT_PROXY": {
+                  "type": "boolean"
+                },
+                "TC_APPROVE_PROXY": {
+                  "type": "boolean"
+                },
+                "TC_RESUBMIT": {
+                  "type": "boolean"
+                },
+                "TC_UPDATE_STATUS": {
+                  "type": "boolean"
+                },
+                "TC_PROCESS_PAYROLL": {
+                  "type": "boolean"
+                },
+                "TC_PROCESS_BILLING": {
+                  "type": "boolean"
+                },
+                "TC_VIEW_ALL": {
+                  "type": "boolean"
+                },
+                "TC_DATA_EXPORT": {
+                  "type": "boolean"
+                },
+                "TC_PDF_EXPORT": {
+                  "type": "boolean"
+                },
+                "TC_EXCEPTIONS_EXPORT": {
+                  "type": "boolean"
+                },
+                "TC_OVERRIDE": {
+                  "type": "boolean"
+                },
+                "TC_REDISTRIBUTE": {
+                  "type": "boolean"
+                },
+                "EX_VIEW": {
+                  "type": "boolean"
+                },
+                "EX_VIEW_HISTORY": {
+                  "type": "boolean"
+                },
+                "EX_EDIT": {
+                  "type": "boolean"
+                },
+                "EX_EDIT_PROXY": {
+                  "type": "boolean"
+                },
+                "EX_APPROVE_PROXY": {
+                  "type": "boolean"
+                },
+                "EX_RESUBMIT": {
+                  "type": "boolean"
+                },
+                "EX_UPDATE_STATUS": {
+                  "type": "boolean"
+                },
+                "EX_PROCESS_PAYROLL": {
+                  "type": "boolean"
+                },
+                "EX_PROCESS_BILLING": {
+                  "type": "boolean"
+                },
+                "EX_VIEW_ALL": {
+                  "type": "boolean"
+                },
+                "EX_DATA_EXPORT": {
+                  "type": "boolean"
+                },
+                "EX_PDF_EXPORT": {
+                  "type": "boolean"
+                },
+                "EX_EXCEPTIONS_EXPORT": {
+                  "type": "boolean"
+                },
+                "EX_OVERRIDE": {
+                  "type": "boolean"
+                },
+                "IN_VIEW": {
+                  "type": "boolean"
+                },
+                "IN_VIEW_HISTORY": {
+                  "type": "boolean"
+                },
+                "IN_EDIT": {
+                  "type": "boolean"
+                },
+                "IN_EDIT_PROXY": {
+                  "type": "boolean"
+                },
+                "IN_APPROVE_PROXY": {
+                  "type": "boolean"
+                },
+                "IN_RESUBMIT": {
+                  "type": "boolean"
+                },
+                "IN_UPDATE_STATUS": {
+                  "type": "boolean"
+                },
+                "IN_PROCESS_PAYROLL": {
+                  "type": "boolean"
+                },
+                "IN_PROCESS_BILLING": {
+                  "type": "boolean"
+                },
+                "IN_VIEW_ALL": {
+                  "type": "boolean"
+                },
+                "IN_DATA_EXPORT": {
+                  "type": "boolean"
+                },
+                "IN_PDF_EXPORT": {
+                  "type": "boolean"
+                },
+                "IN_EXCEPTIONS_EXPORT": {
+                  "type": "boolean"
+                },
+                "IN_OVERRIDE": {
+                  "type": "boolean"
+                },
+                "AS_VIEW_CLIENT": {
+                  "type": "boolean"
+                },
+                "AS_VIEW_CLIENT_ALL": {
+                  "type": "boolean"
+                },
+                "AS_DATA_EXPORT_CLIENT": {
+                  "type": "boolean"
+                },
+                "AS_VIEW_SUPPLIER": {
+                  "type": "boolean"
+                },
+                "AS_DATA_EXPORT_SUPPLIER": {
+                  "type": "boolean"
+                },
+                "DOCS_VIEW": {
+                  "type": "boolean"
+                },
+                "DOCS_VIEW_HISTORY": {
+                  "type": "boolean"
+                },
+                "DOCS_EDIT": {
+                  "type": "boolean"
+                },
+                "DOCS_DATA_EXPORT": {
+                  "type": "boolean"
+                },
+                "USERS_LOGIN_OTHER": {
+                  "type": "boolean"
+                },
+                "USERS_VIEW_SUPPLIER": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "REQS_VIEW",
+                "REQS_VIEW_CLIENT",
+                "REQS_CREATE",
+                "REQS_APPROVE",
+                "REQS_APPROVE_PROXY",
+                "REQS_COMMENT",
+                "REQS_HOLD",
+                "REQS_CLOSE",
+                "REQS_REOPEN",
+                "REQS_EDIT_PARTIAL",
+                "REQS_EDIT_FULL",
+                "REQS_EDIT_FULL_APPROVED",
+                "REQS_SOURCE",
+                "REQS_RELEASED_ACCEPT",
+                "REQS_VIEW_HISTORY",
+                "CANDIDATE_MANAGEMENT",
+                "SUBMISSIONS_PRESCREEN",
+                "SUBMISSIONS_SCREEN",
+                "SUBMISSIONS_VIEW",
+                "SUBMISSIONS_OVERRIDE",
+                "SCREENING_GRAPHICS_BASIC",
+                "SCREENING_GRAPHICS_ADVANCED",
+                "OFFER_SELECTION",
+                "OFFER_EXTENSION",
+                "OFFER_ACCEPT",
+                "REPORTS_RUN",
+                "SYSTEM_MANAGE",
+                "SYSTEM_AUDIT",
+                "USERS_VIEW_MSP",
+                "USERS_VIEW_CLIENT",
+                "EXPORT_USERS",
+                "EXPORT_CLIENTS",
+                "EXPORT_SUPPLIERS",
+                "EXPORT_REQS",
+                "WATCH_REQS",
+                "VIEW_ASSIGNMENTS",
+                "WATCH_ASSIGNMENTS",
+                "TC_VIEW",
+                "TC_VIEW_HISTORY",
+                "TC_EDIT",
+                "TC_EDIT_PROXY",
+                "TC_APPROVE_PROXY",
+                "TC_RESUBMIT",
+                "TC_UPDATE_STATUS",
+                "TC_PROCESS_PAYROLL",
+                "TC_PROCESS_BILLING",
+                "TC_VIEW_ALL",
+                "TC_DATA_EXPORT",
+                "TC_PDF_EXPORT",
+                "TC_EXCEPTIONS_EXPORT",
+                "TC_OVERRIDE",
+                "TC_REDISTRIBUTE",
+                "EX_VIEW",
+                "EX_VIEW_HISTORY",
+                "EX_EDIT",
+                "EX_EDIT_PROXY",
+                "EX_APPROVE_PROXY",
+                "EX_RESUBMIT",
+                "EX_UPDATE_STATUS",
+                "EX_PROCESS_PAYROLL",
+                "EX_PROCESS_BILLING",
+                "EX_VIEW_ALL",
+                "EX_DATA_EXPORT",
+                "EX_PDF_EXPORT",
+                "EX_EXCEPTIONS_EXPORT",
+                "EX_OVERRIDE",
+                "IN_VIEW",
+                "IN_VIEW_HISTORY",
+                "IN_EDIT",
+                "IN_EDIT_PROXY",
+                "IN_APPROVE_PROXY",
+                "IN_RESUBMIT",
+                "IN_UPDATE_STATUS",
+                "IN_PROCESS_PAYROLL",
+                "IN_PROCESS_BILLING",
+                "IN_VIEW_ALL",
+                "IN_DATA_EXPORT",
+                "IN_PDF_EXPORT",
+                "IN_EXCEPTIONS_EXPORT",
+                "IN_OVERRIDE",
+                "AS_VIEW_CLIENT",
+                "AS_VIEW_CLIENT_ALL",
+                "AS_DATA_EXPORT_CLIENT",
+                "AS_VIEW_SUPPLIER",
+                "AS_DATA_EXPORT_SUPPLIER",
+                "DOCS_VIEW",
+                "DOCS_VIEW_HISTORY",
+                "DOCS_EDIT",
+                "DOCS_DATA_EXPORT",
+                "USERS_LOGIN_OTHER",
+                "USERS_VIEW_SUPPLIER"
+              ]
+            },
+            "userType": {
+              "type": "string"
+            },
+            "userID": {
+              "type": "integer"
+            },
+            "permGrpIDs": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ]
+            },
+            "firstName": {
+              "type": "string"
+            },
+            "lastName": {
+              "type": "string"
+            },
+            "workerID": {
+              "type": "integer"
+            },
+            "workerFullName": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "permissions",
+            "userType",
+            "userID",
+            "permGrpIDs",
+            "firstName",
+            "lastName",
+            "workerID",
+            "workerFullName"
+          ]
+        }
+      },
+      "required": [
+        "message",
+        "authToken",
+        "userInfo"
+      ]
+    }
+  },
+  "required": [
+    "meta",
+    "data"
+  ]
+}

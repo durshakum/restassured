@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,452</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Create.CreateSupplier</td><td><a href="#m0">workerCreate</a></td><td rowspan="1">1756672997078</td><td rowspan="1">4219</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">Create.CreateSupplier#workerCreate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+Response body doesn&apos;t match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties ([&quot;authToken&quot;,&quot;message&quot;,&quot;userInfo&quot;])
+    level: &quot;error&quot;
+    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/data&quot;}
+    instance: {&quot;pointer&quot;:&quot;/data&quot;}
+    domain: &quot;validation&quot;
+    keyword: &quot;required&quot;
+    required: [&quot;authToken&quot;,&quot;message&quot;,&quot;userInfo&quot;]
+    missing: [&quot;authToken&quot;,&quot;message&quot;,&quot;userInfo&quot;]
+
+  Actual: {&quot;meta&quot;:{&quot;status_code&quot;:200,&quot;success_message&quot;:&quot;Worker Created&quot;},&quot;data&quot;:{&quot;attachments&quot;:[],&quot;numTotalAssignments&quot;:0,&quot;isActive&quot;:true,&quot;updatedAt&quot;:null,&quot;firstName&quot;:&quot;Anabel&quot;,&quot;lastName&quot;:&quot;Abernathy&quot;,&quot;email&quot;:&quot;margarito.homenick@gmail.com&quot;,&quot;phone&quot;:&quot;(148) 010-9266&quot;,&quot;externalVmsId&quot;:&quot;737383&quot;,&quot;accountingId&quot;:&quot;7373833&quot;,&quot;notes&quot;:&quot;Nothing to add&quot;,&quot;workerID&quot;:1677,&quot;dobMonth&quot;:&quot;04&quot;,&quot;dobDay&quot;:&quot;10&quot;,&quot;dobYear&quot;:&quot;2000&quot;,&quot;address1&quot;:&quot;430 Boyle Causeway&quot;,&quot;address2&quot;:&quot;Ondricka Ports&quot;,&quot;city&quot;:&quot;Lakinland&quot;,&quot;state&quot;:&quot;Rhode Island&quot;,&quot;postalCode&quot;:&quot;53309-4492&quot;,&quot;country&quot;:&quot;Cambodia&quot;,&quot;emergencyContactName&quot;:&quot;NAMO&quot;,&quot;emergencyContactPhone&quot;:&quot;4748348934&quot;,&quot;emergencyContactEmail&quot;:&quot;qaworker1@yopmail.com&quot;,&quot;emergencyContactRelationship&quot;:&quot;NAMO&quot;,&quot;workEmail&quot;:&quot;margarito.homenick@gmail.com&quot;,&quot;persEmail&quot;:&quot;margarito.homenick@gmail.com&quot;,&quot;mobilePhone&quot;:&quot;6337373484&quot;,&quot;workPhone&quot;:&quot;7483839933&quot;,&quot;homePhone&quot;:&quot;7389292922&quot;,&quot;customFields&quot;:[],&quot;createdAt&quot;:&quot;2025-08-31T20:43:20.882Z&quot;}}
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+	at Create.CreateSupplier.workerCreate(CreateSupplier.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
