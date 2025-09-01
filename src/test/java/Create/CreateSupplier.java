@@ -114,8 +114,8 @@ try {
 	response.then().body(JsonSchemaValidator.matchesJsonSchema(new File("C:\\Users\\admin\\eclipse-workspace\\com.restassured\\loginschema.json")));
 	System.out.println("Response Body is *********************"+response.getBody().asString());
 
-	 String firstName = response.path("data.firstName");
-     System.out.println("firstName: " + firstName);
+//	 String firstName = response.path("data.firstName");
+//     System.out.println("firstName: " + firstName);
 	
 	JsonPath jsonPath= response.jsonPath();
 	String external = jsonPath.getString("data.externalVmsId");
