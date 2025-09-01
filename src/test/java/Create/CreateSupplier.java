@@ -117,10 +117,10 @@ try {
 	 String firstName = response.path("data.firstName");
      System.out.println("firstName: " + firstName);
 	
-	JsonPath jsonPath= response.jsonPath();
-	String external = jsonPath.getString("data.externalVmsId");
-	System.out.println("external vms is "+external);
-	System.out.println("Phone number is "+response.path("data.workPhone"));	
+//	JsonPath jsonPath= response.jsonPath();
+//	String external = jsonPath.getString("data.externalVmsId");
+//	System.out.println("external vms is "+external);
+//	System.out.println("Phone number is "+response.path("data.workPhone"));	
 	
 	int statusCode = response.getStatusCode();
 	System.out.println("Status Code: " + statusCode);
