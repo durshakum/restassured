@@ -9,23 +9,14 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,364</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">4,646</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Create.CreateSupplier</td><td><a href="#m0">workerCreate</a></td><td rowspan="1">1756667998988</td><td rowspan="1">4080</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Create.CreateSupplier</td><td><a href="#m0">workerCreate</a></td><td rowspan="1">1756709282024</td><td rowspan="1">4381</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Create.CreateSupplier#workerCreate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
-Response body doesn&apos;t match expectation.
-Expected: The content to match the given JSON schema.
-error: object has missing required properties ([&quot;authToken&quot;,&quot;message&quot;,&quot;userInfo&quot;])
-    level: &quot;error&quot;
-    schema: {&quot;loadingURI&quot;:&quot;#&quot;,&quot;pointer&quot;:&quot;/properties/data&quot;}
-    instance: {&quot;pointer&quot;:&quot;/data&quot;}
-    domain: &quot;validation&quot;
-    keyword: &quot;required&quot;
-    required: [&quot;authToken&quot;,&quot;message&quot;,&quot;userInfo&quot;]
-    missing: [&quot;authToken&quot;,&quot;message&quot;,&quot;userInfo&quot;]
-
-  Actual: {&quot;meta&quot;:{&quot;status_code&quot;:200,&quot;success_message&quot;:&quot;Worker Created&quot;},&quot;data&quot;:{&quot;attachments&quot;:[],&quot;numTotalAssignments&quot;:0,&quot;isActive&quot;:true,&quot;updatedAt&quot;:null,&quot;firstName&quot;:&quot;Sherwood&quot;,&quot;lastName&quot;:&quot;Funk&quot;,&quot;email&quot;:&quot;billy.heaney@hotmail.com&quot;,&quot;phone&quot;:&quot;1-299-123-8955&quot;,&quot;externalVmsId&quot;:&quot;737383&quot;,&quot;accountingId&quot;:&quot;7373833&quot;,&quot;notes&quot;:&quot;Nothing to add&quot;,&quot;workerID&quot;:1676,&quot;dobMonth&quot;:&quot;04&quot;,&quot;dobDay&quot;:&quot;10&quot;,&quot;dobYear&quot;:&quot;2000&quot;,&quot;address1&quot;:&quot;338 McCullough Mills&quot;,&quot;address2&quot;:&quot;Elmer Row&quot;,&quot;city&quot;:&quot;O&apos;Connellstad&quot;,&quot;state&quot;:&quot;North Carolina&quot;,&quot;postalCode&quot;:&quot;49077&quot;,&quot;country&quot;:&quot;Senegal&quot;,&quot;emergencyContactName&quot;:&quot;NAMO&quot;,&quot;emergencyContactPhone&quot;:&quot;4748348934&quot;,&quot;emergencyContactEmail&quot;:&quot;qaworker1@yopmail.com&quot;,&quot;emergencyContactRelationship&quot;:&quot;NAMO&quot;,&quot;workEmail&quot;:&quot;billy.heaney@hotmail.com&quot;,&quot;persEmail&quot;:&quot;billy.heaney@hotmail.com&quot;,&quot;mobilePhone&quot;:&quot;6337373484&quot;,&quot;workPhone&quot;:&quot;7483839933&quot;,&quot;homePhone&quot;:&quot;7389292922&quot;,&quot;customFields&quot;:[],&quot;createdAt&quot;:&quot;2025-08-31T19:20:02.710Z&quot;}}
+<h2>Default test</h2><h3 id="m0">Create.CreateSupplier#workerCreate</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">**********************Into Worker Create*****************************************</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 1 expectation failed.
+JSON path data.externalVmsId doesn&apos;t match.
+Expected: 7373
+  Actual: 737383
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -44,10 +35,17 @@ error: object has missing required properties ([&quot;authToken&quot;,&quot;mess
 	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at Create.CreateSupplier.workerCreate(CreateSupplier.java:111)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at Create.CreateSupplier.workerCreate(CreateSupplier.java:122)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

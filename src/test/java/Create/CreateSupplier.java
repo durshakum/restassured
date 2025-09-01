@@ -11,6 +11,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+
 import com.github.fge.jsonschema.examples.Utils;
 import com.github.javafaker.Faker;
 import com.github.javafaker.PhoneNumber;
@@ -19,14 +20,22 @@ import com.thoughtworks.qdox.model.expression.Equals;
 import authentication.Login;
 import util.ExtentReportListener;
 import static org.hamcrest.Matchers.*;
+import org.testng.Reporter;
 
 
 import java.io.File;
+import java.util.Properties;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 @Listeners(ExtentReportListener.class)
 public class CreateSupplier extends Login{
-  
+
+  Logger log = LogManager.getLogger(CreateSupplier.class);
+ 
+ 
 	Faker faker = new Faker();
 @Test(enabled = false)	
 	void supplierCreate() {
@@ -58,6 +67,8 @@ public class CreateSupplier extends Login{
 @Test	
 void workerCreate() {
 	SoftAssert sf= new SoftAssert();
+	Reporter.log("**********************Into Worker Create*****************************************");
+	log.info("**********************Into Worker Create*****************************************");
 try {	
 	String candfname = faker.name().firstName();
 	String lastname = faker.name().lastName();
@@ -109,7 +120,7 @@ try {
 	
 //	String external = response.path("externalVmsId");
 //	System.out.println("External vsm id value is "+external);
-	response.then().body("data.externalVmsId", equalTo("737383"));
+	response.then().body("data.externalVmsId", equalTo("7373"));
 	response.then().body("data.workPhone", notNullValue());
 	response.then().body(JsonSchemaValidator.matchesJsonSchema(new File("C:\\Users\\admin\\eclipse-workspace\\com.restassured\\loginschema.json")));
 	System.out.println("Response Body is *********************"+response.getBody().asString());

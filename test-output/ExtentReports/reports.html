@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Rough Test</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sept 1, 2025 02:13:16 am</span></a>
+<a href="#"><span class="badge badge-primary">Sept 1, 2025 12:18:01 pm</span></a>
 </li>
 </ul>
 </div>
@@ -86,7 +86,7 @@
           <div class="test-detail">
             <p class="name">workerCreate</p>
             <p class="text-sm">
-              <span>2:13:17 am</span> / <span>00:00:04:224</span>
+              <span>12:18:02?pm</span> / <span>00:00:04:384</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -95,9 +95,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">workerCreate</h5>
-<span class='badge badge-success'>09.01.2025 2:13:17 am</span>
-<span class='badge badge-danger'>09.01.2025 2:13:21 am</span>
-<span class='badge badge-default'>00:00:04:224</span>
+<span class='badge badge-success'>09.01.2025 12:18:02?pm</span>
+<span class='badge badge-danger'>09.01.2025 12:18:06?pm</span>
+<span class='badge badge-default'>00:00:04:384</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -110,35 +110,26 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>2:13:17 am</td>
+        <td>12:18:02?pm</td>
         <td>
           Test started
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:13:21 am</td>
+        <td>12:18:06?pm</td>
         <td>
           Test Failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>2:13:21 am</td>
+        <td>12:18:06?pm</td>
         <td>
           <textarea readonly class="code-block">java.lang.AssertionError: 1 expectation failed.
-Response body doesn't match expectation.
-Expected: The content to match the given JSON schema.
-error: object has missing required properties (["authToken","message","userInfo"])
-    level: "error"
-    schema: {"loadingURI":"#","pointer":"/properties/data"}
-    instance: {"pointer":"/data"}
-    domain: "validation"
-    keyword: "required"
-    required: ["authToken","message","userInfo"]
-    missing: ["authToken","message","userInfo"]
-
-  Actual: {"meta":{"status_code":200,"success_message":"Worker Created"},"data":{"attachments":[],"numTotalAssignments":0,"isActive":true,"updatedAt":null,"firstName":"Anabel","lastName":"Abernathy","email":"margarito.homenick@gmail.com","phone":"(148) 010-9266","externalVmsId":"737383","accountingId":"7373833","notes":"Nothing to add","workerID":1677,"dobMonth":"04","dobDay":"10","dobYear":"2000","address1":"430 Boyle Causeway","address2":"Ondricka Ports","city":"Lakinland","state":"Rhode Island","postalCode":"53309-4492","country":"Cambodia","emergencyContactName":"NAMO","emergencyContactPhone":"4748348934","emergencyContactEmail":"qaworker1@yopmail.com","emergencyContactRelationship":"NAMO","workEmail":"margarito.homenick@gmail.com","persEmail":"margarito.homenick@gmail.com","mobilePhone":"6337373484","workPhone":"7483839933","homePhone":"7389292922","customFields":[],"createdAt":"2025-08-31T20:43:20.882Z"}}
+JSON path data.externalVmsId doesn't match.
+Expected: 7373
+  Actual: 737383
 
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -157,10 +148,17 @@ error: object has missing required properties (["authToken","message","userInfo"
 	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at Create.CreateSupplier.workerCreate(CreateSupplier.java:114)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at Create.CreateSupplier.workerCreate(CreateSupplier.java:122)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -184,13 +182,9 @@ error: object has missing required properties (["authToken","message","userInfo"
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 	at org.testng.TestNG.runSuites(TestNG.java:1112)
 	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </textarea>
           
         </td>
@@ -241,7 +235,7 @@ error: object has missing required properties (["authToken","message","userInfo"
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>02:13:17 am</td>
+<td>12:18:02 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='1'>workerCreate</a>
 </td>
@@ -263,13 +257,13 @@ error: object has missing required properties (["authToken","message","userInfo"
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sept 1, 2025 02:13:16 am</h3>
+<h3>Sept 1, 2025 12:18:01 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sept 1, 2025 02:13:21 am</h3>
+<h3>Sept 1, 2025 12:18:06 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -339,7 +333,7 @@ error: object has missing required properties (["authToken","message","userInfo"
 </div></div>
 <script>
 var timeline = {
-"workerCreate":4.224
+"workerCreate":4.384
 };
 </script>
 <div class="row">

@@ -1,44 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[**********************Into Worker Create*****************************************]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-09-01T00:49:58 IST" name="Suite" finished-at="2025-09-01T00:50:03 IST" duration-ms="4364">
+  <suite started-at="2025-09-01T12:18:01 IST" name="Suite" finished-at="2025-09-01T12:18:06 IST" duration-ms="4646">
     <groups>
     </groups>
-    <test started-at="2025-09-01T00:49:58 IST" name="Default test" finished-at="2025-09-01T00:50:03 IST" duration-ms="4364">
+    <test started-at="2025-09-01T12:18:01 IST" name="Default test" finished-at="2025-09-01T12:18:06 IST" duration-ms="4646">
       <class name="Create.CreateSupplier">
-        <test-method signature="workerCreate()[pri:0, instance:Create.CreateSupplier@5552768b]" started-at="2025-09-01T00:49:58 IST" name="workerCreate" finished-at="2025-09-01T00:50:03 IST" duration-ms="4080" status="FAIL">
+        <test-method signature="workerCreate()[pri:0, instance:Create.CreateSupplier@24111ef1]" started-at="2025-09-01T12:18:02 IST" name="workerCreate" finished-at="2025-09-01T12:18:06 IST" duration-ms="4381" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
-Response body doesn't match expectation.
-Expected: The content to match the given JSON schema.
-error: object has missing required properties (["authToken","message","userInfo"])
-    level: "error"
-    schema: {"loadingURI":"#","pointer":"/properties/data"}
-    instance: {"pointer":"/data"}
-    domain: "validation"
-    keyword: "required"
-    required: ["authToken","message","userInfo"]
-    missing: ["authToken","message","userInfo"]
-
-  Actual: {"meta":{"status_code":200,"success_message":"Worker Created"},"data":{"attachments":[],"numTotalAssignments":0,"isActive":true,"updatedAt":null,"firstName":"Sherwood","lastName":"Funk","email":"billy.heaney@hotmail.com","phone":"1-299-123-8955","externalVmsId":"737383","accountingId":"7373833","notes":"Nothing to add","workerID":1676,"dobMonth":"04","dobDay":"10","dobYear":"2000","address1":"338 McCullough Mills","address2":"Elmer Row","city":"O'Connellstad","state":"North Carolina","postalCode":"49077","country":"Senegal","emergencyContactName":"NAMO","emergencyContactPhone":"4748348934","emergencyContactEmail":"qaworker1@yopmail.com","emergencyContactRelationship":"NAMO","workEmail":"billy.heaney@hotmail.com","persEmail":"billy.heaney@hotmail.com","mobilePhone":"6337373484","workPhone":"7483839933","homePhone":"7389292922","customFields":[],"createdAt":"2025-08-31T19:20:02.710Z"}}
+JSON path data.externalVmsId doesn't match.
+Expected: 7373
+  Actual: 737383
 ]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.AssertionError: 1 expectation failed.
-Response body doesn't match expectation.
-Expected: The content to match the given JSON schema.
-error: object has missing required properties (["authToken","message","userInfo"])
-    level: "error"
-    schema: {"loadingURI":"#","pointer":"/properties/data"}
-    instance: {"pointer":"/data"}
-    domain: "validation"
-    keyword: "required"
-    required: ["authToken","message","userInfo"]
-    missing: ["authToken","message","userInfo"]
-
-  Actual: {"meta":{"status_code":200,"success_message":"Worker Created"},"data":{"attachments":[],"numTotalAssignments":0,"isActive":true,"updatedAt":null,"firstName":"Sherwood","lastName":"Funk","email":"billy.heaney@hotmail.com","phone":"1-299-123-8955","externalVmsId":"737383","accountingId":"7373833","notes":"Nothing to add","workerID":1676,"dobMonth":"04","dobDay":"10","dobYear":"2000","address1":"338 McCullough Mills","address2":"Elmer Row","city":"O'Connellstad","state":"North Carolina","postalCode":"49077","country":"Senegal","emergencyContactName":"NAMO","emergencyContactPhone":"4748348934","emergencyContactEmail":"qaworker1@yopmail.com","emergencyContactRelationship":"NAMO","workEmail":"billy.heaney@hotmail.com","persEmail":"billy.heaney@hotmail.com","mobilePhone":"6337373484","workPhone":"7483839933","homePhone":"7389292922","customFields":[],"createdAt":"2025-08-31T19:20:02.710Z"}}
+JSON path data.externalVmsId doesn't match.
+Expected: 7373
+  Actual: 737383
 
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
@@ -57,10 +42,17 @@ at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
-at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-at Create.CreateSupplier.workerCreate(CreateSupplier.java:111)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
+at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+at Create.CreateSupplier.workerCreate(CreateSupplier.java:122)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -91,6 +83,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
+            <line>
+              <![CDATA[**********************Into Worker Create*****************************************]]>
+            </line>
           </reporter-output>
         </test-method> <!-- workerCreate -->
       </class> <!-- Create.CreateSupplier -->
