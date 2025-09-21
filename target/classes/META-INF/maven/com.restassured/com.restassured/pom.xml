@@ -3,6 +3,21 @@
   <groupId>com.restassured</groupId>
   <artifactId>com.restassured</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <properties>
+    <!-- SonarQube server details -->
+    <sonar.host.url>http://localhost:9000</sonar.host.url>
+   
+
+    <!-- Project-specific properties -->
+    <sonar.projectKey>sqp_4642857b2413fbfea726559d924834b713c7c4dc</sonar.projectKey>
+    <sonar.projectName>RestAssured</sonar.projectName>
+    <sonar.projectVersion>1.0.0</sonar.projectVersion>
+
+    
+</properties>
+  
   <dependencies>
   <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
 <dependency>
@@ -95,7 +110,12 @@
     <artifactId>log4j-core</artifactId>
     <version>2.24.3</version>
 </dependency>
-
+<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
+<dependency>
+    <groupId>org.sonarsource.scanner.maven</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>5.2.0.4988</version>
+</dependency>
 
 
   
@@ -113,6 +133,25 @@
           </suiteXmlFiles>
         </configuration>
       </plugin>
+       <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.8</version> <!-- Use the latest stable version -->
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>report</id>
+                    <phase>prepare-package</phase>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
     </plugins>
   </build>
 </project>
